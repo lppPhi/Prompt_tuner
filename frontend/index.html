@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Tuner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 AI Prompt Tuner</h1>
+
+    <label for="prompt">Nhập prompt của bạn:</label>
+    <textarea id="prompt" placeholder="VD: Vẽ giúp tôi hoa mai"></textarea>
+
+    <label for="formula">Chọn công thức gợi ý:</label>
+    <select id="formula">
+      <option value="tag">T-A-G (Task – Action – Goal)</option>
+      <option value="bab">B-A-B (Before – After – Bridge)</option>
+      <option value="rtf">R-T-F (Role – Task – Format)</option>
+      <option value="care">C-A-R-E (Context – Action – Result – Example)</option>
+      <option value="rise">R-I-S-E (Role – Input – Step – Expectation)</option>
+      <option value="csir">C-S-I-R (Context – Specific – Intent – Response)</option>
+    </select>
+
+    <button onclick="generateSuggestion()">Gợi ý prompt theo công thức</button>
+
+    <div id="result">
+      <h3>Gợi ý của AI:</h3>
+      <pre id="output"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
