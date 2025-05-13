@@ -1,4 +1,5 @@
 python -m venv venv
-.\venv\Scripts\
-pip install adk fastapi uvicorn openai
-uvicorn main:app --reload --port 8000
+.\venv\Scripts\activate
+pip install adk fastapi uvicorn openai requests python-dotenv
+uvicorn main:app --reload
+
